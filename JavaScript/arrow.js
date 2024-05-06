@@ -44,3 +44,32 @@ const arrow = () =>{
 }
 arrow();
 // Here, it will log an empty object in the console instead of the global object that we were previosuly getting inside the functional expressions and normal declarative function
+
+// Core arrow function discussions
+() => {}
+
+const addTwo = (num1, num2) => {
+    return num1+ num2
+}
+
+// Implicit return -> one line statement doesn't require return
+const addTwoo = (num1, num2) =>  num1+ num2
+
+// parenthesis does not require the return keyword as well(Used in REACT)
+const addTwooo = (num1, num2) =>  (num1+ num2)
+
+console.log(addTwo(3, 4))
+
+// How to return objects with arrow functions?
+// The object must be wrapped within a pair of parenthesis
+const obj = () => ({
+    age: 20
+});
+
+console.log(obj());
+
+const myArray = [2, 3, 4, 5];
+// arrow functions as callback function
+myArray.forEach(() => {
+
+})
