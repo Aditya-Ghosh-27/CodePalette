@@ -1,0 +1,39 @@
+Function scope and block scope are two ways to categorize how variables are accessible in JavaScript based on where they are defined in your code. Here's a breakdown of the key differences:
+
+Functional Scope:
+
+Variables declared with var (prior to ES6) inside a function have functional scope.
+They are accessible anywhere within the function body, even in nested blocks or functions within that function.
+Changes made to a function-scoped variable inside the function will persist throughout the function's execution.
+Block Scope:
+
+Variables declared with let and const (introduced in ES6) have block scope.
+They are only accessible within the block of code where they are defined, which can be an if statement, a loop, or simply a block of code wrapped in curly braces {}.
+Changes made to a block-scoped variable are isolated to that specific block and won't affect the variable outside the block.
+
+
+Feature	                        Functional Scope (var)	Block Scope (let & const)
+Scope	                        Entire function body	Block of code (if, loop, {})
+Introduced in	                Before ES6	            ES6
+Accessibility within function	Anywhere	            Within the block only
+Changes within function	        Persist throughout	    Isolated to the block
+
+function doSomething() {
+  if (true) {
+    var x = 10; // Function-scoped with var
+    let y = 20;  // Block-scoped with let
+  }
+  console.log(x); // This will work (x is accessible)
+  // console.log(y); // This will cause a ReferenceError (y is not accessible outside the block)
+}
+
+doSomething();
+
+
+In this example, x is accessible because it has functional scope (using var). However, y is only accessible within the if block because it's block-scoped (using let). Trying to access y outside the block will result in a ReferenceError.
+
+Key Points to Remember:
+
+Using let and const for block scoping generally leads to cleaner and more predictable code.
+It helps prevent naming conflicts and unintended side effects.
+Understanding both functional and block scope is essential for writing effective JavaScript programs.
