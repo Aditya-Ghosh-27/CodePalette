@@ -13,3 +13,13 @@ function z(){
     x();
 }
 z();
+
+// uses of closure
+// 1. Module design pattern
+// 2. Currying
+// 3. Function like once
+// 4. memoize 
+// 5. maintaining state in async world 
+// 6. setTimeout 
+// 7. Iterators
+// 8. and many more...
