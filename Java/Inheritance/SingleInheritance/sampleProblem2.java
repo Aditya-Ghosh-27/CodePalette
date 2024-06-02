@@ -1,4 +1,5 @@
 package SingleInheritance;
+// Sample problem 2 on single inheritance
 import java.util.*;
 class Info
 {
