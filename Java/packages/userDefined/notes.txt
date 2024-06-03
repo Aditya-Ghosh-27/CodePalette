@@ -1,0 +1,2 @@
+to bring all java files into the same package from command line, javac -d . filename.java
+to do the same for all .java files, use javac -d . *.java
