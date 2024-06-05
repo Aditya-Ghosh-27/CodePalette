@@ -110,8 +110,8 @@ class Swift extends Maruti{
 
 class Hybrid{
 	public static void main(String[] args){
-        Bus bs = new Bus(100, 200, 800, 700);
-        bs.display();
+        	Bus bs = new Bus(100, 200, 800, 700);
+        	bs.display();
 		Swift sz = new Swift(100, 200, 800, 50, 100012);
 		sz.display();
 	}
