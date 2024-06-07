@@ -1,5 +1,5 @@
 // There maybe sometimes when we would like to throw our own exception. We can do this by using the keyword throws as follows
-            // throw new Throwable_subclass;
+        // throw new Throwable_subclass;
     // Example:
             // throw new ArithmeticException();
             // throw new NumberFormatException();

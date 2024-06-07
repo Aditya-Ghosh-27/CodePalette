@@ -1,4 +1,5 @@
 // Program based on MULTIPLE INHERITANCE using interface
+
 interface Employee{
     void display();
 }

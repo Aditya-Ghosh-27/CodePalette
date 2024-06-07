@@ -1,6 +1,4 @@
-package ConstructorInheritance;
 // Sample problem on constructor inheritance
-import java.util.*;
 class Bank
 {
     String nam;
@@ -13,7 +11,7 @@ class Bank
     public void display()
     {
         System.out.println("Name of account holder: "+nam);
-        System.out.print("Account number: "+AccNo);
+        System.out.println("Account number: "+AccNo);
     }
 }
 class Deposit extends Bank
@@ -30,10 +28,11 @@ class Deposit extends Bank
         System.out.println("Fixed Deposit Amount: "+amt);
     }
 }
-public class result {
+public class Main
+{
     public static void main(String[] args)
     {
-        Deposit obj = new Deposit(12243, "MR. XYZ", 75000.00);
+        Deposit obj = new Deposit(12243, "MR. Aditya", 75000.00);
         System.out.println("Account Details");
         obj.showDetails();
     }
